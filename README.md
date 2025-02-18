@@ -57,16 +57,16 @@ You can then apply edge detection or highlight people in the image using the res
 #### Original Image
 Here is an example of an original image that can be loaded from the `images` directory:
 
-![Original Image](Images/Drone_4.jpg.jpg)
+![Original Image](Images/Drone_4.jpg)
 
 #### Edges Detected
 After applying edge detection, the result looks like this:
 
-![Edges Detected](Result/edges_detected.jpg)
+![Edges Detected](Result/Contours.jpg)
 
 #### People Highlighted
 Once the program detects people, it draws bounding boxes around them:
 
-![People Highlighted](Result/people_highlighted.jpg)
+![People Highlighted](Result/result.jpg)
 
 ## Directory Structure

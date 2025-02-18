@@ -269,12 +269,16 @@ public:
             }
         }
 
-        cv::drawContours(removedContoursImage, removedContours, -1, cv::Scalar(0, 0, 255), 2);
-        cv::drawContours(removedContoursImage, validContours, -1, cv::Scalar(0, 255, 0), 2);
+        cv::Mat Contours = image.clone();
+        cv::drawContours(Contours, removedContours, -1, cv::Scalar(0, 0, 255), 2);
+        cv::drawContours(Contours, validContours, -1, cv::Scalar(0, 255, 0), 2);
         
         // Display results
         cv::imshow("Detected People", result);
-        cv::imshow("Contours", removedContoursImage);
+        cv::imshow("Contours", Contours);
+
+        cv::imwrite("C:/C++/Projekt_openCV/Menu/Menu/Results/result.jpg", result);
+        cv::imwrite("C:/C++/Projekt_openCV/Menu/Menu/Results/Contours.jpg", Contours);
         cv::waitKey(0);
         cv::destroyAllWindows();
     }
