@@ -62,11 +62,11 @@ Here is an example of an original image that can be loaded from the `images` dir
 #### Edges Detected
 After applying edge detection, the result looks like this:
 
-![Edges Detected](Result/Contours.jpg)
+![Edges Detected](Results/Contours.jpg)
 
 #### People Highlighted
 Once the program detects people, it draws bounding boxes around them:
 
-![People Highlighted](Result/result.jpg)
+![People Highlighted](Results/result.jpg)
 
 ## Directory Structure
