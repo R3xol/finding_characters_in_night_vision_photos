@@ -1,0 +1,16 @@
+# Ignoruj folder x64
+/x64/
+
+# Ignoruj pliki projektu Visual Studio
+Menu.vcxproj.user
+Menu.vcxproj.filters
+Menu.vcxproj
+
+# Ignoruj pliki tymczasowe i build
+*.obj
+*.exe
+*.dll
+*.pdb
+*.lib
+*.suo
+*.user
